@@ -1,45 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Apex Weather Service Status</title>
-    <link rel="stylesheet" href="style.css">
+<title>Apex Weather Service</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="login" id="login">
-    <h1>🌦 Apex Weather Service</h1>
-    <p>Forecaster Access Required</p>
+<div class="clouds"></div>
 
-    <input type="password" id="password" placeholder="Password">
-    <button onclick="login()">Enter</button>
+<nav>
+<h2>🌦 Apex Weather Service</h2>
+<a href="forecaster.html">Forecaster Login</a>
+</nav>
 
-    <p id="error"></p>
+
+<section class="hero">
+
+<h1>Apex Weather Service</h1>
+
+<p>
+Advanced weather monitoring, alerts, and forecasting
+powered through Discord.
+</p>
+
+<div class="status">
+🟢 Apex Weather Service is now OPERATIONAL
 </div>
 
 
-<div class="panel" id="panel">
+<div class="buttons">
 
-    <h1>🌦 Apex Weather Service</h1>
-    <h2>Status Manager</h2>
+<a class="btn" href="#">
+Invite Bot
+</a>
 
-    <select id="status">
-        <option value="online">🟢 Online</option>
-        <option value="maintenance">🟡 Maintenance</option>
-        <option value="degraded">🟠 Degraded</option>
-        <option value="outage">🔴 Outage</option>
-        <option value="update">🔵 Update Complete</option>
-        <option value="restart">🔄 Restarting</option>
-    </select>
-
-    <textarea id="message" readonly></textarea>
-
-    <button onclick="copyMessage()">Copy Message</button>
+<a class="btn" href="forecaster.html">
+Forecaster Portal
+</a>
 
 </div>
 
+</section>
 
-<script src="script.js"></script>
+
+
+<section class="features">
+
+<h1>Features</h1>
+
+
+<div class="cards">
+
+<div class="card">
+<h2>🌩 Weather Alerts</h2>
+<p>
+Receive important weather alerts directly through Discord.
+</p>
+</div>
+
+
+<div class="card">
+<h2>🌎 Forecast Monitoring</h2>
+<p>
+Track forecasts and weather conditions.
+</p>
+</div>
+
+
+<div class="card">
+<h2>🚨 Emergency Alerts</h2>
+<p>
+Stay informed during severe weather events.
+</p>
+</div>
+
+
+</div>
+
+</section>
+
+
+<footer>
+Apex Weather Service © 2026
+</footer>
+
 
 </body>
 </html>
