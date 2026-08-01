@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apex Weather Service Status</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="login" id="login">
+    <h1>🌦 Apex Weather Service</h1>
+    <p>Forecaster Access Required</p>
+
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Enter</button>
+
+    <p id="error"></p>
+</div>
+
+
+<div class="panel" id="panel">
+
+    <h1>🌦 Apex Weather Service</h1>
+    <h2>Status Manager</h2>
+
+    <select id="status">
+        <option value="online">🟢 Online</option>
+        <option value="maintenance">🟡 Maintenance</option>
+        <option value="degraded">🟠 Degraded</option>
+        <option value="outage">🔴 Outage</option>
+        <option value="update">🔵 Update Complete</option>
+        <option value="restart">🔄 Restarting</option>
+    </select>
+
+    <textarea id="message" readonly></textarea>
+
+    <button onclick="copyMessage()">Copy Message</button>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
