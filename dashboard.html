@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Apex Dashboard</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="dashboard">
+
+
+<h1>🌦 Apex Weather Service</h1>
+
+<h2>Forecaster Dashboard</h2>
+
+
+<select id="status" onchange="changeStatus()">
+
+<option value="online">
+🟢 Online
+</option>
+
+
+<option value="maintenance">
+🟡 Maintenance
+</option>
+
+
+<option value="degraded">
+🟠 Degraded
+</option>
+
+
+<option value="outage">
+🔴 Outage
+</option>
+
+
+<option value="update">
+🔵 Update Complete
+</option>
+
+
+<option value="restart">
+🔄 Restarting
+</option>
+
+
+</select>
+
+
+<textarea id="message"></textarea>
+
+
+<button onclick="copyText()">
+Copy Discord Message
+</button>
+
+
+</div>
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
