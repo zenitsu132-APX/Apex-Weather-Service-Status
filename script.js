@@ -1,40 +1,34 @@
-const password = "Forecaster12312";
+const password="Forecaster12312";
 
 
 function login(){
 
-    let input = document.getElementById("password").value;
+let pass=document.getElementById("password").value;
 
-    if(input === password){
 
-        document.getElementById("login").style.display="none";
-        document.getElementById("panel").style.display="block";
+if(pass===password){
 
-        updateMessage();
+window.location="dashboard.html";
 
-    } else {
+}
 
-        document.getElementById("error").innerHTML =
-        "Incorrect Password";
+else{
 
-    }
+document.getElementById("error").innerHTML=
+"Incorrect Password";
+
+}
 
 }
 
 
 
-document.getElementById("status").addEventListener(
-"change",
-updateMessage
-);
+function changeStatus(){
+
+let status=document.getElementById("status").value;
 
 
-
-function updateMessage(){
-
-let status = document.getElementById("status").value;
-
-let messages = {
+let messages={
 
 
 online:
@@ -78,23 +72,24 @@ restart:
 🔄 Apex Weather Service is restarting.
 The bot will be back online shortly.`
 
+
 };
 
 
-document.getElementById("message").value = messages[status];
+document.getElementById("message").value=
+messages[status];
+
 
 }
 
 
 
-function copyMessage(){
+function copyText(){
 
-let box=document.getElementById("message");
+navigator.clipboard.writeText(
+document.getElementById("message").value
+);
 
-box.select();
-
-navigator.clipboard.writeText(box.value);
-
-alert("Copied status message!");
+alert("Copied!");
 
 }
